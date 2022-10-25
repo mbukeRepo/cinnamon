@@ -13,6 +13,8 @@ module.exports = {
         linear: "#486A6F",
         success: "#5BCCDE",
         default: "#E1EBFA",
+        lightGray: "#F4F7FF",
+        lessLightGray: "#e1ebfa"
       },
       fontFamily: {
         sans: ["Noto Sans", "sans-serif"],

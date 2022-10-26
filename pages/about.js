@@ -6,23 +6,28 @@ import Team from "../components/Layout/About/Team";
 import Partners from "../components/Layout/Home/Partners";
 import Logos from "../components/UI/Logos";
 import Section from "../components/UI/Section";
+import Head from "next/head";
 
 export default function about() {
   return (
     <div>
+      <Head>
+        <title>About</title>
+      </Head>
       <Hero />
-      <Section>
-        <div className="flex gap-4 flex-col py-12 items-center">
-          <h6 className="text-sm text-success font-semibold">Statistics</h6>
-          <h3 className="text-linear font-bold text-[2.25rem]">
-            Development in numbers
-          </h3>
-        </div>
-        <Statistics />
+      <div className="mb-12">
+        <Section>
+          <div className="flex gap-4 flex-col py-12 items-center">
+            <h6 className="text-sm text-success font-semibold">Statistics</h6>
+            <h3 className="text-linear font-bold text-[2.25rem]">
+              Development in numbers
+            </h3>
+          </div>
+          <Statistics />
+          <Logos />
+        </Section>
+      </div>
 
-        <Logos />
-        <div className="mb-12 flex gap-12 flex-col"></div>
-      </Section>
       <Team />
       <CallUs />
     </div>

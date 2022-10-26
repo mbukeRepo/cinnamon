@@ -2,16 +2,21 @@ import React from "react";
 import Container from "../../UI/Container";
 import Flex from "../../UI/Flex";
 import Button from "../../UI/Button";
+import Header from "../Header";
 
 export default function Hero() {
   return (
-    <div className="bg-secondary py-16">
+    <div className="bg-secondary py-6">
       <Container>
+        <Header />
         <div className="pt-12 pb-36">
           <Flex>
             <div className="flex-1 relative">
               <img src="/about2.png" />
-              <img src="/about1.png" className="absolute -bottom-[25%] right-[25%]" />
+              <img
+                src="/about1.png"
+                className="absolute -bottom-[25%] right-[25%]"
+              />
             </div>
             <div className="flex-1 flex gap-12 flex-col">
               <h6 className="text-sm text-success font-semibold">About us</h6>

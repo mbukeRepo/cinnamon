@@ -5,7 +5,7 @@ import Flex from "./Flex";
 export default function Logos() {
   return (
     <Container>
-      <div className="mb-36">
+      <div className="">
         <div className="border-y border-tartiary py-12">
           <Flex>
             <div>

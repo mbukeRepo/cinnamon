@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "../UI/Container";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -31,10 +32,18 @@ const Footer = () => {
               </div>
             </div>
             <ul>
-              <li>About us</li>
-              <li>Services</li>
-              <li>Projects</li>
-              <li>Contact</li>
+              <li>
+                <Link href="/about">About</Link>
+              </li>
+              <li>
+                <Link href="/services">Services</Link>
+              </li>
+              <li>
+                <Link href="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link href="/contacts">Contact</Link>
+              </li>
             </ul>
             <div className="flex flex-col justify-between">
               <ul>

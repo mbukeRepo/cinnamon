@@ -19,7 +19,9 @@ export default function about() {
           </h3>
         </div>
         <Statistics />
+
         <Logos />
+        <div className="mb-12 flex gap-12 flex-col"></div>
       </Section>
       <Team />
       <CallUs />

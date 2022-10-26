@@ -6,6 +6,7 @@ import About from "../components/Layout/Home/About";
 import Projects from "../components/Layout/Home/Projects";
 import Socials from "../components/Layout/Home/Socials";
 import ContactForm from "../components/Layout/ContactForm";
+import Heading from "../components/Layout/Home/Heading";
 
 export default function Home() {
   return (
@@ -14,13 +15,13 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <div className="">
+        <Heading />
         <Hero />
         <Partners />
         <About />
         <Projects />
         <Socials />
         <ContactForm />
-        <Footer />
       </div>
     </div>
   );

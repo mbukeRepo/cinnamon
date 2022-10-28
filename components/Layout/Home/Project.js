@@ -2,7 +2,7 @@ import Flex from "../../UI/Flex";
 import Button from "../../UI/Button";
 import Container from "../../UI/Container";
 
-export default function projects() {
+export default function Project() {
   return (
     <div className="bg-lightGray">
       <Container>

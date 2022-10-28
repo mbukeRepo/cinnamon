@@ -2,12 +2,12 @@ import Flex from "../../UI/Flex";
 import Button from "../../UI/Button";
 import Container from "../../UI/Container";
 
-export default function Projects() {
+export default function projects() {
   return (
     <div className="bg-lightGray">
       <Container>
         <div className="pt-12 pb-36">
-          <Flex >
+          <Flex>
             <div className="flex-1 flex gap-12 flex-col">
               <h6 className="text-sm text-success font-semibold">
                 Available Properties

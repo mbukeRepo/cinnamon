@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../UI/Container";
 import Flex from "../../UI/Flex";
-export default function Statistics() {
+export default function Statistic() {
   return (
     <Container>
       <div className="">

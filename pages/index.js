@@ -1,10 +1,10 @@
 import Footer from "../components/Layout/Footer";
 import Hero from "../components/Layout/Home/Hero";
 import Head from "next/head";
-import Partners from "../components/Layout/Home/Partners";
+import Partner from "../components/Layout/Home/Partner";
 import About from "../components/Layout/Home/About";
-import Projects from "../components/Layout/Home/Projects";
-import Socials from "../components/Layout/Home/Socials";
+import Project from "../components/Layout/Home/Project";
+import Social from "../components/Layout/Home/Social";
 import ContactForm from "../components/Layout/ContactForm";
 import Heading from "../components/Layout/Home/Heading";
 
@@ -17,10 +17,10 @@ export default function Home() {
       <div className="">
         <Heading />
         <Hero />
-        <Partners />
+        <Partner />
         <About />
-        <Projects />
-        <Socials />
+        <Project />
+        <Social />
         <ContactForm />
       </div>
     </div>

@@ -3,13 +3,13 @@ import Container from "../../UI/Container";
 import List from "../../UI/List";
 import Section from "../../UI/Section";
 
-export default function Socials() {
+export default function Social() {
   return (
     <div className="bg-lessLightGray">
       <Container>
         <div className="pt-12 pb-36">
           <Section>
-            <h6 className="text-sm text-success font-semibold">Socials</h6>
+            <h6 className="text-sm text-success font-semibold">Social</h6>
             <h3 className="text-linear font-bold text-[2.25rem]">
               On Instagram
             </h3>

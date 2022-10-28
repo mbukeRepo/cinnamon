@@ -1,6 +1,6 @@
 import Logos from "../../UI/Logos";
 
-export default function Partners() {
+export default function Partner() {
   return (
     <div className="bg-lessLightGray py-16">
       <Logos />

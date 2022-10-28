@@ -7,7 +7,7 @@ export default function About() {
     <div className="bg-lessLightGray">
       <Container>
         <div className="pt-12 pb-36">
-          <Flex >
+          <Flex>
             <div className="flex-1">
               <img src="/partners.png" />
             </div>

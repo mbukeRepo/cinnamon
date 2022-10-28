@@ -1,9 +1,7 @@
 import React from "react";
 import Container from "../../UI/Container";
-import Button from "../../UI/Button";
 import Section from "../../UI/Section";
 import List from "../../UI/List";
-import Card from "../../UI/Card";
 
 export default function Team() {
   const teams = [

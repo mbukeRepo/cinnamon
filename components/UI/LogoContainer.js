@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./Container";
 import Flex from "./Flex";
 
-export default function Logos() {
+export default function LogoContainer() {
   return (
     <Container>
       <div className="">

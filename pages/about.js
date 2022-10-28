@@ -4,7 +4,7 @@ import Hero from "../components/Layout/About/Hero";
 import Statistic from "../components/Layout/About/Statistic";
 import Team from "../components/Layout/About/Team";
 import Partner from "../components/Layout/Home/Partner";
-import Logos from "../components/UI/Logos";
+import Logos from "../components/UI/LogoContainer";
 import Section from "../components/UI/Section";
 import Head from "next/head";
 

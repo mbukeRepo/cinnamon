@@ -1,4 +1,4 @@
-import Logos from "../../UI/Logos";
+import Logos from "../../UI/LogoContainer";
 
 export default function Partner() {
   return (

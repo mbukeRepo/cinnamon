@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.clippy {
+  clip-path: polygon(0 0, 0% 100%, 100% 46%);
+}
+
+@font-face {
+  font-family: mont-semi-bold;
+  src: url("/fonts/MontSemiBold.woff");
+}
+
+@font-face {
+  font-family: mont-bold;
+  src: url("/fonts/MontBold.woff");
+}
+@font-face {
+  font-family: mont-heavy;
+  src: url("/fonts/MontHeavy.woff");
+}
+
+@font-face {
+  font-family: mont-regular;
+  src: url("/fonts/MontRegular.woff2");
+}

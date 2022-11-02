@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function View() {
+export default function View({ children }) {
   return (
     <div className="flex text-primary gap-3 items-center ">
       <div>
@@ -20,7 +20,7 @@ export default function View() {
         </svg>
       </div>
       <h3 className="relative after:absolute after:bottom-0 after:w-full after:h-[0.13rem] font-mont-bold text-lg after:bg-primary after:left-0">
-        VIEW MORE BLOGS
+        {children}
       </h3>
     </div>
   );

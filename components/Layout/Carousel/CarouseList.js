@@ -32,7 +32,8 @@ export default function CarouseList() {
           />
         ))}
       </div>
-      <Direction className="gap-24" />
+
+      <Direction className="gap-24 px-[4.8rem]" />
     </div>
   );
 }

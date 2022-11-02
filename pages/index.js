@@ -6,13 +6,15 @@ import BlogList from "../components/Layout/Blog/BlogList";
 import Button from "../components/UI/Button";
 import Qoute from "../components/Layout/Qoute";
 import Footer from "../components/Layout/Footer";
-
+import WeGrowing from "../components/Layout/WeGrowing";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import WhoWeAre from "../components/Layout/WhoWeAre";
 
 export default function Home() {
   const [changeState, setChangeState] = useState(false);
   const heroRef = useRef();
+
   useEffect(() => {
     const handleScroll = () => {
       const coords = heroRef.current.getBoundingClientRect();
@@ -82,14 +84,16 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className="container mx-auto ">
+        <Qoute />
+      </div>
+      <WhoWeAre />
+      <WeGrowing />
       <div className="container  mx-auto  py-24">
         <CarouseList />
       </div>
       <div className="container mx-auto py-24">
         <BlogList />
-      </div>
-      <div className="container mx-auto py-24">
-        <Qoute />
       </div>
       <Footer />
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function Direction({ className }) {
   return (
-    <div className={`flex ${className}  px-[4.8rem]`}>
+    <div className={`flex ${className}`}>
       <div className="w-[4rem] hover:-translate-y-4 transition-all duration-300">
         <Image
           src="/images/arrowl48x27.png"

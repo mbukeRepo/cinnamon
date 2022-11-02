@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         primary: "#5135FF",
         pureWhite: "#F5F5F5",
+        secondary: "#636363",
+        tartiary: "#CCCCCC",
+        footer: "#CFCFCF",
       },
       fontFamily: {
         sans: ["mont-regular", "system-ui", "sans-serif"],

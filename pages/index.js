@@ -1,14 +1,39 @@
 import Header from "../components/Layout/Header";
 import ProjectList from "../components/Layout/Project/ProjectList";
 import ServiceList from "../components/Layout/Service/ServiceList";
+import CarouseList from "../components/Layout/Carousel/CarouseList";
+import BlogList from "../components/Layout/Blog/BlogList";
 import Button from "../components/UI/Button";
+import Qoute from "../components/Layout/Qoute";
+import Footer from "../components/Layout/Footer";
+
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+  const [changeState, setChangeState] = useState(false);
+  const heroRef = useRef();
+  useEffect(() => {
+    const handleScroll = () => {
+      const coords = heroRef.current.getBoundingClientRect();
+      setChangeState(false);
+      if (coords.top < -40) {
+        setChangeState(true);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
-      <div className="min-h-[43rem] flex flex-col justify-end min-w-screen bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]">
-        <Header />
+    <div className="overflow-hidden">
+      <div
+        ref={heroRef}
+        className="min-h-[43rem] relative flex flex-col justify-end min-w-screen bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]"
+      >
+        <Header changeState={changeState} />
         <div className="text-pureWhite container mx-auto w-full h-full flex gap-6 flex-col px-[4.8rem] pb-24">
           <h1 className="font-mont-heavy text-[4.8rem] leading-[6rem]">
             Results focused design & development agency.
@@ -31,8 +56,8 @@ export default function Home() {
           <ServiceList />
         </div>
       </div>
-      <div className="bg-[#F6F6F6] relative px-[4.8rem] overflow-hidden">
-        <div className="py-24 container mx-auto grid grid-cols-2">
+      <div className="bg-[#F6F6F6] relative px-[5rem] 2xl:px-[12rem] overflow-hidden">
+        <div className="py-24 max-w-[1400px] mx-auto  grid grid-cols-2">
           <h2 className="text-5xl font-mont-bold">
             Agile team
             <br /> on demand
@@ -57,6 +82,16 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className="container  mx-auto  py-24">
+        <CarouseList />
+      </div>
+      <div className="container mx-auto py-24">
+        <BlogList />
+      </div>
+      <div className="container mx-auto py-24">
+        <Qoute />
+      </div>
+      <Footer />
     </div>
   );
 }

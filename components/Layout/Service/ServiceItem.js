@@ -6,7 +6,7 @@ const ServiceItem = ({ title, text, imageUrl }) => {
         <Image src={imageUrl} width={48} height={48} alt={title} />
       </div>
       <h3 className="font-mont-bold text-2xl">{title}</h3>
-      <h5 className="text-[1.06rem] text-[#CCCCCC]">{text}</h5>
+      <h5 className="text-[1.06rem] text-tartiary">{text}</h5>
     </div>
   );
 };

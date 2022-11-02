@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from "react";
 import WhoWeAre from "../components/Layout/WhoWeAre";
 import CinnamonCollege from "../components/Layout/CinnamonCollege";
 import CTA from "../components/Layout/CTA";
+import Head from "next/head";
 
 export default function Home() {
   const [changeState, setChangeState] = useState(false);
@@ -33,21 +34,30 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
+      <Head>
+        <title>CINNAMON | All software, zero bullshit.</title>
+        <meta
+          name="description"
+          content="The one-stop shop to design, develop and deploy your next digital project."
+        />
+        <link rel="icon" href="https://cinnamon.agency/favicon-32x32.png" />
+      </Head>
       <div
         ref={heroRef}
-        className="min-h-[43rem] relative flex flex-col justify-end min-w-screen bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]"
+        className="min-h-[43rem] sm:min-h-[30rem] relative flex flex-col justify-end min-w-screen bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]"
       >
         <Header changeState={changeState} />
-        <div className="text-pureWhite container mx-auto w-full h-full flex gap-6 flex-col px-[4.8rem] pb-24">
-          <h1 className="font-mont-heavy text-[4.8rem] leading-[6rem]">
+        <div className="text-pureWhite container mx-auto w-full h-full flex gap-6 flex-col md:px-[3rem] px-[4.8rem] pb-24">
+          <h1 className="font-mont-heavy pt-12 text-[4.8rem] md:text-[2.8rem] sm:text-[2.5rem] md:pt-24 md:leading-[4rem] leading-[6rem]">
             Results focused design & development agency.
           </h1>
-          <p className="text-xl  leading-[2.5rem]">
+          <p className="text-xl md:text-lg lg:leading-[1.5rem]  leading-[2.5rem]">
             Extend your team with our high performing specialists or hire us{" "}
-            <br /> to shape your product from scratch. Either way, we’ll get
-            your
-            <br /> product off the ground and build a momentum for your
-            <br /> success.
+            <br className="md:hidden" /> to shape your product from scratch.
+            Either way, we’ll get your
+            <br className="md:hidden" /> product off the ground and build a
+            momentum for your
+            <br className="md:hidden" /> success.
           </p>
         </div>
       </div>

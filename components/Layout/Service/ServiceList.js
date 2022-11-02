@@ -29,9 +29,9 @@ const services = [
 
 function ServiceList() {
   return (
-    <div className="grid grid-cols-3 px-[4.8rem] w-full">
+    <div className="grid grid-cols-3 lg:grid-cols-1 px-[4.8rem] lg:gap-3 w-full">
       <h1 className="col-span-1 font-mont-bold text-[3.5rem]">Our services</h1>
-      <div className="col-span-2 pl-[7rem] grid gap-24 grid-cols-2 ">
+      <div className="col-span-2 pl-[7rem] lg:pl-[0rem] grid gap-24 grid-cols-2 lg:grid-cols-1 ">
         {services.map(({ imageUrl, text, title }, index) => (
           <ServiceItem title={title} text={text} imageUrl={imageUrl} />
         ))}

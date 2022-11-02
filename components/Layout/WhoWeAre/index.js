@@ -14,7 +14,7 @@ export default function WhoWeAre() {
     "Marketing",
   ];
   return (
-    <div className="relative bg-[#F6F6F6]">
+    <div className="relative bg-cinn-bg-color">
       <div className="container py-36 px-[4.8rem] mx-auto flex flex-col gap-16 ">
         <div className="flex flex-col gap-12">
           <h3 className="font-mont-bold text-6xl">Who we are</h3>

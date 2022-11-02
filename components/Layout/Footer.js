@@ -27,7 +27,9 @@ export default function Footer() {
           <p className="underline">hello@cinnamon.agency</p>
         </div>
         <div className="col-span-2 flex flex-col gap-12">
-          <h3>All software, zero bullshit.</h3>
+          <h3 className="text-3xl font-mont-bold">
+            All software, zero bullshit.
+          </h3>
           <div className="grid grid-cols-3 pb-24">
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-mont-bold">Zagreb</h3>

@@ -12,6 +12,8 @@ module.exports = {
         secondary: "#636363",
         tartiary: "#CCCCCC",
         footer: "#CFCFCF",
+        "cinn-bg-color": "#F6F6F6",
+        "project-text": "#686868",
       },
       fontFamily: {
         sans: ["mont-regular", "system-ui", "sans-serif"],

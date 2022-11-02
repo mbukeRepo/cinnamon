@@ -11,7 +11,7 @@ const ProjectItem = ({ imageURl, bg, labels, title, text }) => {
           className="group-hover:scale-105 w-full h-full transition-all duration-300"
         />
       </div>
-      <ul className="flex gap-6 text-xs text-[#686868] font-mont-bold">
+      <ul className="flex gap-6 text-xs text-project-text font-mont-bold">
         {labels.map((label, index) => (
           <li key={index}>{label}</li>
         ))}
@@ -21,7 +21,7 @@ const ProjectItem = ({ imageURl, bg, labels, title, text }) => {
         dangerouslySetInnerHTML={{ __html: title }}
       ></h3>
       <p
-        className="text-[#686868]"
+        className="text-project-text"
         dangerouslySetInnerHTML={{ __html: text }}
       ></p>
     </div>

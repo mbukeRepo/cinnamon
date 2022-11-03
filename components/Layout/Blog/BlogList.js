@@ -29,7 +29,7 @@ const BlogList = () => {
         Stay in the loop
         <br className="block md:hidden" /> on tech topics
       </h2>
-      <div className="flex gap-12">
+      <div className="flex gap-12 overflow-scroll scroll-hidden">
         {blogs.map(({ imageUrl, labels, description, title }, index) => (
           <BlogItem
             imageUrl={imageUrl}

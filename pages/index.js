@@ -76,7 +76,7 @@ export default function Home() {
             Agile team
             <br className="block md:hidden" /> on demand
           </h2>
-          <div className="hidden md:block">
+          <div className="hidden w-[24rem] md:block">
             <Image
               src="/images/image_3.png"
               width={750}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function BlogItem({ labels, imageUrl, description, title }) {
   return (
-    <div key={title} className="flex group flex-col gap-6">
+    <div key={title} className="flex group basis-96 flex-grow flex-col gap-6">
       <div className="flex flex-col gap-4">
         <div className="w-[352px]">
           <Image src={imageUrl} width={352} height={216} alt={title} />

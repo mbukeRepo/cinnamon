@@ -22,7 +22,7 @@ export default function Footer() {
                 <br /> zero bullshit.
               </h3>
             </div>
-            <div className="grid md:text-sm grid-cols-1 md:grid-cols-2 md:gap-24 w-full">
+            <div className="grid md:text-sm grid-cols-1 md:grid-cols-2 md:gap-[7rem] w-full">
               <ul className="flex flex-col text-footer gap-3  font-mont-semi-bold ">
                 <li>Home</li>
                 <li>Projects</li>
@@ -91,6 +91,9 @@ export default function Footer() {
                   alt="clutch badge"
                 />
               </div>
+              <p className=" mt-5 underline hidden md:block w-full text-center max-w-[18rem]">
+                hello@cinnamon.agency
+              </p>
             </div>
           </div>
         </div>

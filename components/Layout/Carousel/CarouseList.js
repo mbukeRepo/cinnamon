@@ -24,7 +24,7 @@ export default function CarouseList() {
       <h2 className="text-6xl md:text-3xl font-mont-bold px-[4.5rem] md:px-[2rem]">
         Our offices
       </h2>
-      <div className="grid grid-cols-[repeat(3,_544px)] md:grid-cols-[repeat(3,_294px)] pl-[4.5rem] md:pl-[2rem]  gap-8">
+      <div className="grid grid-cols-[repeat(3,_544px)] overflow-scroll scroll-hidden md:grid-cols-[repeat(3,_294px)] pl-[4.5rem] md:pl-[2rem]  gap-8">
         {carouselItems.map(({ location, description, imageUrl }, index) => (
           <CarouselItem
             location={location}

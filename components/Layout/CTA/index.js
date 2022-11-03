@@ -6,7 +6,7 @@ export default function CTA() {
   return (
     <div className="bg-cinn-bg-color relative">
       <div className="container  mx-auto  py-24 flex flex-col items-center text-center gap-16">
-        <h4 className="font-mont-bold text-5xl w-3/5 leading-[4rem]">
+        <h4 className="font-mont-bold text-5xl">
           <span className="block md:hidden">Have a project in mind?</span>
           <br className="block md:hidden" /> Let's work together.
         </h4>

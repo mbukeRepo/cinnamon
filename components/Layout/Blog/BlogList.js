@@ -24,18 +24,19 @@ const blogs = [
 
 const BlogList = () => {
   return (
-    <div className="px-[4.8rem] flex flex-col gap-16">
-      <h2 className="font-mont-bold text-6xl">
+    <div className="px-[4.8rem] md:px-[2rem] flex flex-col gap-16">
+      <h2 className="font-mont-bold text-6xl md:text-4xl">
         Stay in the loop
-        <br /> on tech topics
+        <br className="block md:hidden" /> on tech topics
       </h2>
-      <div className="grid grid-cols-3">
-        {blogs.map(({ imageUrl, labels, description, title }) => (
+      <div className="flex gap-12">
+        {blogs.map(({ imageUrl, labels, description, title }, index) => (
           <BlogItem
             imageUrl={imageUrl}
             labels={labels}
             description={description}
             title={title}
+            key={index}
           />
         ))}
       </div>

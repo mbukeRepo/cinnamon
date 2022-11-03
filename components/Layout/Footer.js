@@ -4,33 +4,44 @@ import Button from "../UI/Button";
 
 export default function Footer() {
   return (
-    <div className="pt-[4.5rem] px-[4.8rem] text-pureWhite bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]">
-      <div className="container mx-auto max-w-[80rem] grid grid-cols-3 border-b border-gray-300 pb-6">
+    <div className="pt-[4.5rem] px-[4.8rem] md:px-[2rem] text-pureWhite bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]">
+      <div className="container mx-auto min-w-[18rem] max-w-[80rem] grid grid-cols-3 md:gap-16 md:grid-cols-1 border-b border-gray-300 pb-6">
         <div className="flex flex-col justify-between ">
           <div className="flex flex-col gap-7">
-            <div>
-              <Image
-                src="/logos/cinnamon.svg"
-                alt="logo"
-                width={160}
-                height={20}
-              />
+            <div className="flex flex-col gap-12">
+              <div>
+                <Image
+                  src="/logos/cinnamon.svg"
+                  alt="logo"
+                  width={160}
+                  height={20}
+                />
+              </div>
+              <h3 className="text-2xl  hidden md:block font-mont-bold">
+                All software,
+                <br /> zero bullshit.
+              </h3>
             </div>
-            <ul className="flex flex-col text-footer gap-3 font-mont-semi-bold ">
-              <li>Projects</li>
-              <li>Services</li>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Blog</li>
-            </ul>
+            <div className="grid md:text-sm grid-cols-1 md:grid-cols-2 md:gap-24 w-full">
+              <ul className="flex flex-col text-footer gap-3  font-mont-semi-bold ">
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Services</li>
+              </ul>
+              <ul className="flex flex-col text-footer gap-3 font-mont-semi-bold ">
+                <li className="whitespace-nowrap">About Us</li>
+                <li>Careers</li>
+                <li>Blog</li>
+              </ul>
+            </div>
           </div>
-          <p className="underline">hello@cinnamon.agency</p>
+          <p className="underline block md:hidden">hello@cinnamon.agency</p>
         </div>
         <div className="col-span-2 flex flex-col gap-12">
-          <h3 className="text-3xl font-mont-bold">
+          <h3 className="text-3xl block md:hidden font-mont-bold">
             All software, zero bullshit.
           </h3>
-          <div className="grid grid-cols-3 pb-24">
+          <div className="grid grid-cols-3 md:text-sm md:grid-cols-2 md:gap-12 pb-24">
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-mont-bold">Zagreb</h3>
               <p className="text-footer">
@@ -51,19 +62,19 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex justify-between">
-            <div className="flex flex-col justify-between">
+          <div className="flex md:flex-col md:gap-16 justify-between">
+            <div className="flex flex-col md:w-[18rem] md:gap-6 justify-between">
               <h3>Our newsletter</h3>
-              <div>
+              <div className="w-full">
                 <input
                   style={{}}
                   placeholder="Your Email"
-                  className="transition-all duration-500 bg-transparent focus:border-[#5135FF]  border-b relative border-gray-400 focus:placeholder:absolute focus:placeholder:top-0 focus:placeholder:left-0 focus:placeholder:text-[#5135FF] focus:placeholder:text-xs pt-6 outline-none"
+                  className="transition-all w-full duration-500 bg-transparent focus:border-[#5135FF]  border-b relative border-gray-400 focus:placeholder:absolute focus:placeholder:top-0 focus:placeholder:left-0 focus:placeholder:text-[#5135FF] focus:placeholder:text-xs pt-6 outline-none"
                 />
               </div>
               <Button>Subscribe</Button>
             </div>
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col md:items-center justify-between">
               <div>
                 <Image
                   src="/images/pangea-badge.svg"
@@ -84,12 +95,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto flex justify-between py-8">
-        <ul className="flex gap-3">
+      <div className="container mx-auto min-w-[18rem] max-w-[80rem] md:flex-col-reverse flex justify-between py-8">
+        <ul className="flex gap-3 justify-center">
           <li>© 2022 Cinnamon</li>
           <li>Privacy Policy</li>
         </ul>
-        <ul className="flex gap-3">
+        <ul className="flex gap-3 md:border-b md:border-gray-400 pb-6 md:justify-center md:mb-12">
           <li>
             <Image
               width={41}

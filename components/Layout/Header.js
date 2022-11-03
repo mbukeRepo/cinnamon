@@ -9,7 +9,7 @@ const Header = ({ changeState }) => {
         changeState ? "text-black" : "text-pureWhite"
       } left-0 w-full`}
     >
-      <div className="py-4 md:px-[3rem] px-[4.8rem]  container  mx-auto  items-center  w-full flex justify-between">
+      <div className="py-4 md:px-[2rem] px-[4.8rem]  container  mx-auto  items-center  w-full flex justify-between">
         <div className={`${!changeState ? "block" : "hidden"}`}>
           <Image src="/logos/cinnamon.svg" alt="logo" width={160} height={20} />
         </div>
@@ -58,9 +58,11 @@ const Header = ({ changeState }) => {
             </li>
           </ul>
           <div
-            className={`hidden xl:block ${!changeState ? "" : "text-black"}`}
+            className={`hidden xl:block ${
+              !changeState ? "white" : "text-black"
+            }`}
           >
-            <svg
+            {/* <svg
               width="32"
               height="32"
               viewBox="0 0 32 32"
@@ -90,7 +92,26 @@ const Header = ({ changeState }) => {
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-            </svg>
+            </svg> */}
+            {!changeState ? (
+              <div>
+                <Image
+                  src="/images/menu1.svg"
+                  width={32}
+                  height={32}
+                  alt="menu bar"
+                />
+              </div>
+            ) : (
+              <div>
+                <Image
+                  src="/images/menu2.svg"
+                  width={32}
+                  height={32}
+                  alt="menu bar"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

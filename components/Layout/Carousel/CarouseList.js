@@ -21,19 +21,23 @@ export default function CarouseList() {
   ];
   return (
     <div className="flex flex-col gap-12">
-      <h2 className="text-6xl font-mont-bold px-[4.5rem]">Our offices</h2>
-      <div className="grid grid-cols-[repeat(3,_544px)] pl-[4.5rem]  gap-8">
+      <h2 className="text-6xl md:text-3xl font-mont-bold px-[4.5rem] md:px-[2rem]">
+        Our offices
+      </h2>
+      <div className="grid grid-cols-[repeat(3,_544px)] md:grid-cols-[repeat(3,_294px)] pl-[4.5rem] md:pl-[2rem]  gap-8">
         {carouselItems.map(({ location, description, imageUrl }, index) => (
           <CarouselItem
             location={location}
             description={description}
             imageUrl={imageUrl}
             index={index}
+            key={index}
           />
         ))}
       </div>
-
-      <Direction className="gap-24 px-[4.8rem]" />
+      <div className="block md:hidden">
+        <Direction className="gap-24 px-[4.8rem]" />
+      </div>
     </div>
   );
 }

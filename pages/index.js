@@ -44,11 +44,11 @@ export default function Home() {
       </Head>
       <div
         ref={heroRef}
-        className="min-h-[43rem] sm:min-h-[30rem] relative flex flex-col justify-end min-w-screen bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]"
+        className="min-h-[43rem]  md:min-h-[18rem] sm:max-h-[50rem] relative flex flex-col justify-end min-w-screen bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]"
       >
         <Header changeState={changeState} />
-        <div className="text-pureWhite container mx-auto w-full h-full flex gap-6 flex-col md:px-[3rem] px-[4.8rem] pb-24">
-          <h1 className="font-mont-heavy pt-12 text-[4.8rem] md:text-[2.8rem] sm:text-[2.5rem] md:pt-24 md:leading-[4rem] leading-[6rem]">
+        <div className="text-pureWhite container mx-auto w-full h-full flex gap-6 flex-col md:px-[2rem] px-[4.8rem] pb-24 ">
+          <h1 className="font-mont-heavy  text-[4.8rem] md:text-[2.8rem] sm:text-[1.8rem] md:pt-24 md:leading-[4rem] leading-[6rem]">
             Results focused design & development agency.
           </h1>
           <p className="text-xl md:text-lg lg:leading-[1.5rem]  leading-[2.5rem]">
@@ -65,17 +65,25 @@ export default function Home() {
         <ProjectList />
       </div>
 
-      <div className="py-36 text-pureWhite bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]">
+      <div className="py-36 md:py-24 text-pureWhite bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]">
         <div className="container mx-auto">
           <ServiceList />
         </div>
       </div>
-      <div className="bg-cinn-bg-color relative px-[5rem] 2xl:px-[12rem] overflow-hidden">
-        <div className="py-36 max-w-[1400px] mx-auto  grid grid-cols-2">
+      <div className="bg-cinn-bg-color relative px-[5rem] md:px-[2rem] 2xl:px-[12rem] overflow-hidden">
+        <div className="py-36 max-w-[1400px] mx-auto relative z-10  grid grid-cols-2 md:grid-cols-1 md:gap-12">
           <h2 className="text-5xl font-mont-bold">
             Agile team
-            <br /> on demand
+            <br className="block md:hidden" /> on demand
           </h2>
+          <div className="hidden md:block">
+            <Image
+              src="/images/image_3.png"
+              width={750}
+              height={478}
+              alt="agility"
+            />
+          </div>
           <div className="flex flex-col gap-6">
             <p className="w-4/5 text-secondary">
               By hiring and managing talented people with skills specific to
@@ -87,7 +95,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute -bottom-0 w-64 h-[10rem] right-0">
+        <div className="absolute block md:hidden -bottom-0 w-96 h-[10rem] right-0">
           <Image
             src="/images/image_3.png"
             width={750}

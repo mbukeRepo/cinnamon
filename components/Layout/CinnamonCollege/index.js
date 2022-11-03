@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function index() {
   return (
-    <div className="bg-cinn-bg-color relative px-[5rem] 2xl:px-[12rem] overflow-hidden">
-      <div className="py-36 max-w-[1400px] mx-auto  grid grid-cols-2">
+    <div className="bg-cinn-bg-color relative px-[5rem] md:px-[2rem] 2xl:px-[12rem] overflow-hidden">
+      <div className="py-36 max-w-[1400px] mx-auto  grid grid-cols-2 md:gap-12 md:grid-cols-1">
         <div>
           <Image
             src="/images/cinn-college.png"
@@ -25,7 +25,7 @@ export default function index() {
           </div>
         </div>
       </div>
-      <div className="absolute -bottom-4 w-[570px] right-0">
+      <div className="absolute block md:hidden -bottom-4 w-[570px] right-0">
         <Image
           src="/images/cinnamonCollege.png"
           width={750}

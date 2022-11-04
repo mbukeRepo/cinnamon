@@ -62,37 +62,6 @@ const Header = ({ changeState }) => {
               !changeState ? "white" : "text-black"
             }`}
           >
-            {/* <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="#cccccc"
-              stroke="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-black"
-            >
-              <path
-                d="M5.33301 8H26.6663"
-                stroke="white"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M5.33301 16H18.6663"
-                stroke="white"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M5.33301 24H23.9997"
-                stroke="white"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg> */}
             {!changeState ? (
               <div>
                 <Image

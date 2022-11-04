@@ -40,7 +40,7 @@ export default function WeGrowing() {
                     src="/images/arrowRightWhite.png"
                     width={48}
                     height={27}
-                    alt=""
+                    alt="arrow right "
                   />
                 </div>
               </div>

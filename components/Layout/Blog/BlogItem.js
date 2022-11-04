@@ -5,7 +5,7 @@ export default function BlogItem({ labels, imageUrl, description, title }) {
   return (
     <div key={title} className="flex group basis-96 flex-grow flex-col gap-6">
       <div className="flex flex-col gap-4">
-        <div className="w-[352px]">
+        <div className="w-[22rem]">
           <Image src={imageUrl} width={352} height={216} alt={title} />
         </div>
         <p className="text-xs font-mont-bold group-hover:text-primary">

@@ -13,6 +13,7 @@ import WhoWeAre from "../components/Layout/WhoWeAre";
 import CinnamonCollege from "../components/Layout/CinnamonCollege";
 import CTA from "../components/Layout/CTA";
 import Head from "next/head";
+import Container from "../components/UI/Container";
 
 export default function Home() {
   const [changeState, setChangeState] = useState(false);
@@ -47,7 +48,7 @@ export default function Home() {
         className="min-h-[43rem]  md:min-h-[18rem] sm:max-h-[50rem] relative flex flex-col justify-end min-w-screen bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]"
       >
         <Header changeState={changeState} />
-        <div className="text-pureWhite container mx-auto w-full h-full flex gap-6 flex-col md:px-[2rem] px-[4.8rem] pb-24 ">
+        <Container className="text-pureWhite w-full h-full flex gap-6 flex-col md:px-[2rem] px-[4.8rem] pb-24 ">
           <h1 className="font-mont-heavy  text-[4.8rem] md:text-[2.8rem] sm:text-[1.8rem] md:pt-24 md:leading-[4rem] leading-[6rem]">
             Results focused design & development agency.
           </h1>
@@ -59,19 +60,19 @@ export default function Home() {
             momentum for your
             <br className="md:hidden" /> success.
           </p>
-        </div>
+        </Container>
       </div>
-      <div className="container mx-auto">
+      <Container>
         <ProjectList />
-      </div>
+      </Container>
 
       <div className="py-36 md:py-24 text-pureWhite bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]">
-        <div className="container mx-auto">
+        <Container>
           <ServiceList />
-        </div>
+        </Container>
       </div>
       <div className="bg-cinn-bg-color relative px-[5rem] md:px-[2rem] 2xl:px-[12rem] overflow-hidden">
-        <div className="py-36 max-w-[1400px] mx-auto relative z-10  grid grid-cols-2 md:grid-cols-1 md:gap-12">
+        <div className="py-36 max-w-[87.5rem] mx-auto relative z-10  grid grid-cols-2 md:grid-cols-1 md:gap-12">
           <h2 className="text-5xl font-mont-bold">
             Agile team
             <br className="block md:hidden" /> on demand
@@ -104,18 +105,18 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="container mx-auto ">
+      <Container>
         <Qoute />
-      </div>
+      </Container>
       <WhoWeAre />
       <WeGrowing />
       <CinnamonCollege />
-      <div className="container  mx-auto  py-24">
+      <Container className="py-24">
         <CarouseList />
-      </div>
-      <div className="container mx-auto py-24">
+      </Container>
+      <Container className="py-24">
         <BlogList />
-      </div>
+      </Container>
       <CTA />
       <Footer />
     </div>

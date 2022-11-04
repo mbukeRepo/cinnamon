@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../UI/Button";
+import Container from "../UI/Container";
 
 export default function Footer() {
   return (
     <div className="pt-[4.5rem] px-[4.8rem] md:px-[2rem] text-pureWhite bg-black bg-opacity-90 bg-[url('https://cinnamon.agency/images/noise.png')]">
-      <div className="container mx-auto min-w-[18rem] max-w-[80rem] grid grid-cols-3 md:gap-16 md:grid-cols-1 border-b border-gray-300 pb-6">
+      <Container className="min-w-[18rem] max-w-[80rem] grid grid-cols-3 md:gap-16 md:grid-cols-1 border-b border-gray-300 pb-6">
         <div className="flex flex-col justify-between ">
           <div className="flex flex-col gap-7">
             <div className="flex flex-col gap-12">
@@ -22,7 +23,7 @@ export default function Footer() {
                 <br /> zero bullshit.
               </h3>
             </div>
-            <div className="grid md:text-sm grid-cols-1 md:grid-cols-2 md:gap-[7rem] w-full">
+            <div className="grid md:text-sm grid-cols-1 md:grid-cols-2 md:gap-[10rem] w-full">
               <ul className="flex flex-col text-footer gap-3  font-mont-semi-bold ">
                 <li>Home</li>
                 <li>Projects</li>
@@ -41,22 +42,22 @@ export default function Footer() {
           <h3 className="text-3xl block md:hidden font-mont-bold">
             All software, zero bullshit.
           </h3>
-          <div className="grid grid-cols-3 md:text-sm md:grid-cols-2 md:gap-12 pb-24">
+          <div className="grid grid-cols-3 md:text-sm md:grid-cols-2 gap-16 md:gap-24 pb-24">
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-mont-bold">Zagreb</h3>
-              <p className="text-footer">
+              <p className="text-footer text-sm">
                 Slavonska avenija 6, 10000, Zagreb, Croatia +385 99 347 3103
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-mont-bold">Zagreb</h3>
-              <p className="text-footer">
+              <h3 className="text-lg font-mont-bold">New York</h3>
+              <p className="text-footer text-sm">
                 Slavonska avenija 6, 10000, Zagreb, Croatia +385 99 347 3103
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-mont-bold">Zagreb</h3>
-              <p className="text-footer">
+              <h3 className="text-lg font-mont-bold">Belgrade</h3>
+              <p className="text-footer text-sm">
                 Slavonska avenija 6, 10000, Zagreb, Croatia +385 99 347 3103
               </p>
             </div>
@@ -65,12 +66,14 @@ export default function Footer() {
           <div className="flex md:flex-col md:gap-16 justify-between">
             <div className="flex flex-col md:w-[18rem] md:gap-6 justify-between">
               <h3>Our newsletter</h3>
-              <div className="w-full">
+              <div className="w-full relative">
                 <input
                   style={{}}
-                  placeholder="Your Email"
-                  className="transition-all w-full duration-500 bg-transparent focus:border-[#5135FF]  border-b relative border-gray-400 focus:placeholder:absolute focus:placeholder:top-0 focus:placeholder:left-0 focus:placeholder:text-[#5135FF] focus:placeholder:text-xs pt-6 outline-none"
+                  className="transition-all peer w-full duration-700 bg-transparent focus:border-primary  border-b relative border-gray-400 pt-6 outline-none"
                 />
+                <span className="absolute left-0 peer-focus:top-0  top-1/2 text-sm peer-focus:text-primary transition-all  duration-700">
+                  Your Email
+                </span>
               </div>
               <Button>Subscribe</Button>
             </div>
@@ -91,14 +94,14 @@ export default function Footer() {
                   alt="clutch badge"
                 />
               </div>
-              <p className=" mt-5 underline hidden md:block w-full text-center max-w-[18rem]">
+              <p className="mt-5 underline hidden md:block w-full text-center max-w-[18rem]">
                 hello@cinnamon.agency
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="container mx-auto min-w-[18rem] max-w-[80rem] md:flex-col-reverse flex justify-between py-8">
+      </Container>
+      <Container className="min-w-[18rem] max-w-[80rem] md:flex-col-reverse flex justify-between py-8">
         <ul className="flex gap-3 justify-center">
           <li>© 2022 Cinnamon</li>
           <li>Privacy Policy</li>
@@ -148,7 +151,7 @@ export default function Footer() {
             />
           </li>
         </ul>
-      </div>
+      </Container>
     </div>
   );
 }

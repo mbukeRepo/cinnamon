@@ -48,11 +48,12 @@
 }
 
 .play-shadow {
-  @apply w-[3rem] h-[3rem] rounded-[50%] cursor-pointer border-none relative transition-shadow duration-300 ease-in-out bg-white;
-  box-shadow: rgb(81 53 255) 0 0 0 0.125rem inset;
+  @apply w-[3rem] h-[3rem] rounded-[50%] cursor-pointer relative transition-all duration-300 ease-in-out bg-transparent;
+  box-shadow: rgb(81 53 255) 0 0 0 0 inset;
 }
 
 .play-shadow:hover {
+  @apply border-primary;
   box-shadow: rgb(81 53 255) 0 0 0 8rem inset;
 }
 .play-shadow:hover .clippy {

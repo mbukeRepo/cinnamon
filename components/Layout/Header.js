@@ -42,7 +42,7 @@ const Header = ({ changeState }) => {
           <ul className="flex gap-10 xl:hidden items-center ">
             <li className="">
               <button
-                className={`border-2 ${
+                className={`play-shadow border-2 ${
                   changeState ? "border-primary" : "border-white"
                 } rounded-full h-10 w-10 flex items-center justify-center`}
               >

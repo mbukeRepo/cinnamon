@@ -23,69 +23,38 @@
   font-family: mont-regular;
   src: url("/fonts/MontRegular.woff2");
 }
-.quote {
-  -webkit-text-size-adjust: 100%;
-  --toastify-color-light: #fff;
-  --toastify-color-dark: #121212;
-  --toastify-color-info: #3498db;
-  --toastify-color-success: #07bc0c;
-  --toastify-color-warning: #f1c40f;
-  --toastify-color-error: #e74c3c;
-  --toastify-color-transparent: hsla(0, 0%, 100%, 0.7);
-  --toastify-icon-color-info: var(--toastify-color-info);
-  --toastify-icon-color-success: var(--toastify-color-success);
-  --toastify-icon-color-warning: var(--toastify-color-warning);
-  --toastify-icon-color-error: var(--toastify-color-error);
-  --toastify-toast-width: 320px;
-  --toastify-toast-background: #fff;
-  --toastify-toast-min-height: 64px;
-  --toastify-toast-max-height: 800px;
-  --toastify-font-family: sans-serif;
-  --toastify-z-index: 9999;
-  --toastify-text-color-light: #757575;
-  --toastify-text-color-dark: #fff;
-  --toastify-text-color-info: #fff;
-  --toastify-text-color-success: #fff;
-  --toastify-text-color-warning: #fff;
-  --toastify-text-color-error: #fff;
-  --toastify-spinner-color: #616161;
-  --toastify-spinner-color-empty-area: #e0e0e0;
-  --toastify-color-progress-light: linear-gradient(
-    90deg,
-    #4cd964,
-    #5ac8fa,
-    #007aff,
-    #34aadc,
-    #5856d6,
-    #ff2d55
-  );
-  --toastify-color-progress-dark: #bb86fc;
-  --toastify-color-progress-info: var(--toastify-color-info);
-  --toastify-color-progress-success: var(--toastify-color-success);
-  --toastify-color-progress-warning: var(--toastify-color-warning);
-  --toastify-color-progress-error: var(--toastify-color-error);
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-  color: rgba(81, 53, 255, 0.1);
-  position: absolute;
-  font-family: "MontBold";
-  font-size: 258px;
-  top: -56px;
-  left: -94px;
-}
-
-.css-177ylxl {
-  @apply font-mont-bold w-32 h-32;
-  font-family: "MontBold";
-  color: rgba(81, 53, 255, 0.1);
-  font-size: 175px;
-  position: absolute;
-  top: -26px;
-  left: -33px;
+.c-shadow-white {
+  box-shadow: rgb(255, 255, 255) 0 0 0 10rem inset;
 }
 .scroll-hidden::-webkit-scrollbar {
   display: none;
+}
+.btn:hover .btn__shadow {
+  box-shadow: rgb(81, 53, 255) 0 0 0 0 inset;
+}
+.btn__shadow {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] pt-[120%] w-[120%] text-primary transition-shadow duration-300 ease-in-out;
+  box-shadow: 0 0 0 12rem inset rgb(81, 53, 255);
+}
+.btn {
+  @apply flex justify-center items-center cursor-pointer outline-none p-[1rem_2rem_0.75rem] text-white bg-primary h-[3rem] border-2 border-primary relative overflow-hidden font-mont-semi-bold;
+  box-shadow: rgb(255, 255, 255) 0 0 0 10rem inset;
+}
+.btn__text {
+  @apply text-white relative z-10;
+}
+.btn:hover .btn__text {
+  @apply text-primary;
+}
+
+.play-shadow {
+  @apply w-[3rem] h-[3rem] rounded-[50%] cursor-pointer border-none relative transition-shadow duration-300 ease-in-out bg-white;
+  box-shadow: rgb(81 53 255) 0 0 0 0.125rem inset;
+}
+
+.play-shadow:hover {
+  box-shadow: rgb(81 53 255) 0 0 0 8rem inset;
+}
+.play-shadow:hover .clippy {
+  @apply bg-white;
 }

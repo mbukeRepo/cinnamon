@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.clippy {
+  clip-path: polygon(0 0, 0% 100%, 100% 46%);
+}
+
+@font-face {
+  font-family: mont-semi-bold;
+  src: url("/fonts/MontSemiBold.woff");
+}
+
+@font-face {
+  font-family: mont-bold;
+  src: url("/fonts/MontBold.woff");
+}
+@font-face {
+  font-family: mont-heavy;
+  src: url("/fonts/MontHeavy.woff");
+}
+
+@font-face {
+  font-family: mont-regular;
+  src: url("/fonts/MontRegular.woff2");
+}
+.c-shadow-white {
+  box-shadow: rgb(255, 255, 255) 0 0 0 10rem inset;
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.btn:hover .btn__shadow {
+  box-shadow: rgb(81, 53, 255) 0 0 0 0 inset;
+}
+.btn__shadow {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] pt-[120%] w-[120%] text-primary transition-shadow duration-300 ease-in-out;
+  box-shadow: 0 0 0 12rem inset rgb(81, 53, 255);
+}
+.btn {
+  @apply flex justify-center items-center cursor-pointer outline-none p-[1rem_2rem_0.75rem] text-white bg-primary h-[3rem] border-2 border-primary relative overflow-hidden font-mont-semi-bold;
+  box-shadow: rgb(255, 255, 255) 0 0 0 10rem inset;
+}
+.btn__text {
+  @apply text-white relative z-10;
+}
+.btn:hover .btn__text {
+  @apply text-primary;
+}
+
+.play-shadow {
+  @apply w-[3rem] h-[3rem] rounded-[50%] cursor-pointer relative transition-all duration-300 ease-in-out bg-transparent;
+  box-shadow: rgb(81 53 255) 0 0 0 0 inset;
+}
+
+.play-shadow:hover {
+  @apply border-primary;
+  box-shadow: rgb(81 53 255) 0 0 0 8rem inset;
+}
+.play-shadow:hover .clippy {
+  @apply bg-white;
+}

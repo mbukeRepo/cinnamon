@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../UI/Button";
+import Link from "next/link";
 const Header = ({ changeState }) => {
   return (
     <div
@@ -24,19 +25,19 @@ const Header = ({ changeState }) => {
         <div className="flex   gap-16 items-center">
           <ul className="flex xl:hidden gap-10 font-mont-semi-bold items-center">
             <li className="relative hover:cursor-pointer after:hidden hover:after:inline-block hover:text-primary after:absolute after:-bottom-4 after:-translate-x-1/2 after:rounded-full after:left-1/2 after:content-[''] after:w-2 after:h-2 after:bg-primary ">
-              Projects
+              <Link href="/projects">Projects</Link>
             </li>
             <li className="relative transition-all duration-300 hover:cursor-pointer after:hidden hover:after:inline-block hover:text-primary after:absolute after:-bottom-4 after:-translate-x-1/2 after:rounded-full after:left-1/2 after:content-[''] after:w-2 after:h-2 after:bg-primary ">
-              Services
+              <Link href="/services">Services</Link>
             </li>
             <li className="relative transition-all duration-300 hover:cursor-pointer after:hidden hover:after:inline-block hover:text-primary after:absolute after:-bottom-4 after:-translate-x-1/2 after:rounded-full after:left-1/2 after:content-[''] after:w-2 after:h-2 after:bg-primary ">
-              About Us
+              <Link href="/about">About Us</Link>
             </li>
             <li className="relative transition-all duration-300 hover:cursor-pointer after:hidden hover:after:inline-block hover:text-primary after:absolute after:-bottom-4 after:-translate-x-1/2 after:rounded-full after:left-1/2 after:content-[''] after:w-2 after:h-2 after:bg-primary ">
-              Careers
+              <Link href="/careers">Careers</Link>
             </li>
             <li className="relative transition-all duration-300 hover:cursor-pointer after:hidden hover:after:inline-block hover:text-primary after:absolute after:-bottom-4 after:-translate-x-1/2 after:rounded-full after:left-1/2 after:content-[''] after:w-2 after:h-2 after:bg-primary ">
-              Blog
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
           <ul className="flex gap-10 xl:hidden items-center ">
